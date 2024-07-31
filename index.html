@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="/styles/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
 </head>
 
 <body>
@@ -31,13 +30,11 @@
         <img src="img/logomarca.png" alt="Logomarca da Empresa">
     </div>
     <section id="início" class="banner">
-
         <div class="slideshow">
             <img src="img/banner1.jpg" alt="Banner 2" class="slide">
             <img src="img/banner2.jpg" alt="Banner 3" class="slide">
             <img src="img/banner3.jpg" alt="Banner 3" class="slide">
             <img src="img/banner4.jpg" alt="Banner 3" class="slide">
-
         </div>
         <div class="banner-content">
             <h1>Conecte-se com a natureza</h1>
@@ -46,122 +43,132 @@
     </section>
     <section id="destinos">
         <div class="texto-destaque">
-        <h2>Destinos Populares</h2>
-        <input type="text" id="search" placeholder="Procure destinos e atividades pelo Brasil">
-    </div>
-        <div class="destino-card">
-            <h3>Bonito - Mato Grosso Do Sul</h3>
-            <img src="img/bonito, mato grosso do sul.jpg" alt="Destino 1" class="destino-imagem">
-           
-            <p>Descrição</p>
+            <h2>Destinos Populares</h2>
+            <input type="text" id="search" placeholder="Procure destinos e atividades pelo Brasil">
         </div>
-        <div class="destino-card">
-            <h3>Boipeba - Bahia</h3>
-            <img src="img/boipeba, Bahia.jpg" alt="boipeba" class="destino-imagem">
-            <p>Descrição</p>
-        </div>
-        <div class="destino-card">
-            <h3>Chapada Dos Veadeiros - Goiás</h3>
-            <img src="img/chapada dos veadeiros, goiás.jpeg" alt="Destino 3" class="destino-imagem">
-            <p>Descrição breve do destino 1.</p>
-        </div>
-        <div class="destino-card">
-            <h3>Chapada Diamantina - Bahia</h3>
-            <img src="img/chapada-diamantina, Bahia.jpeg" alt="Destino 4" class="destino-imagem">
-            <p>Descrição breve do destino 1.</p>
-        </div>
-        <div class="destino-card">
-            <h3>Fernando De Noronha - Pernambuco</h3>
-            <img src="img/fernando de noronha, Pernanbuco.jpeg" alt="Destino 5" class="destino-imagem">
-            <p>Descrição breve do destino 1.</p>
-        </div>
-        <div class="destino-card">
-            <h3>João Pessoa - Paraíba</h3>
-            <img src="img/joão pessoa, paraíba.jpeg" alt="Destino 6" class="destino-imagem">
-            <p>Descrição breve do destino 1.</p>
-        </div>
-        <div class="destino-card">
-            <h3>Lençóis Maranhenses</h3>
-            <img src="img/lencois-maranhenses.jpeg" alt="Destino 7" class="destino-imagem">
-            <p>Descrição breve do destino 1.</p>
-        </div>
-        <div class="destino-card">
-            <h3>Pantanal - Mato Grosso do Sul</h3>
-            <img src="img/pantanal, mato grosso do sul.jpg" alt="Destino 8" class="destino-imagem">
-            <p>Descrição breve do destino 1.</p>
-        </div>
-        <div class="destino-card">
-            <h3>Pirenópolis - Goiás</h3>
-            <img src="img/pirenópolis, goiás.jpg" alt="Destino 9" class="destino-imagem">
-            <p>Descrição breve do destino 1.</p>
-        </div>
-        <div class="destino-card">
-            <h3>Porto de Galinhas - Pernambuco</h3>
-            <img src="img/porto-galinhas, pernanbuco.jpeg" alt="Destino 10" class="destino-imagem">
-            <p>Descrição breve do destino 1.</p>
+        <div class="destinos-container">
+            <div class="destino-card">
+                <h3>Bonito - Mato Grosso do sul</h3>
+                <img src="img/bonito, mato grosso do sul.jpg" alt="Destino 1" class="destino-imagem" onclick="openModal(this)">
+                <p>Bonito, em Mato Grosso do Sul, é um destino de ecoturismo famoso por suas águas cristalinas e paisagens naturais deslumbrantes. Ideal para snorkelling, mergulho em cavernas submersas e trilhas até cachoeiras magníficas, Bonito combina aventura e preservação ambiental em um cenário de beleza única no Brasil.</p>
+            </div>
+            <div class="destino-card">
+                <h3>Boipeba - Bahia</h3>
+                <img src="img/boipeba, Bahia.jpg" alt="boipeba" class="destino-imagem" onclick="openModal(this)">
+                <p>Boipeba, localizada na Bahia, é um paraíso tropical intocado conhecido por suas praias de areias brancas e águas azul-turquesa. Este destino oferece uma atmosfera tranquila e autêntica, perfeita para quem busca relaxamento e contato com a natureza. As atividades incluem mergulho, passeios de barco para ilhas vizinhas, como Morro de São Paulo, e caminhadas por trilhas que levam a paisagens deslumbrantes e vilarejos charmosos. Boipeba é um refúgio ideal para aqueles que desejam explorar a beleza natural da Bahia longe das multidões.</p>
+            </div>
+            <div class="destino-card">
+                <h3>Chapada Dos Veadeiros - Goiás</h3>
+                <img src="img/chapada dos veadeiros, goiás.jpeg" alt="Destino 3" class="destino-imagem" onclick="openModal(this)">
+                <p>A Chapada dos Veadeiros, em Goiás, é um santuário de natureza exuberante e espiritualidade. Reconhecida como Patrimônio Mundial da UNESCO, oferece paisagens deslumbrantes de cerrado, cachoeiras cristalinas e formações rochosas únicas. Este destino é ideal para caminhadas em trilhas que levam a quedas d'água impressionantes, como a do Rio Preto e a de Santa Bárbara, e para contemplar a biodiversidade única da região, incluindo espécies raras de flora e fauna.</p>
+            </div>
+            <div class="destino-card">
+                <h3>Chapada Diamantina - Bahia</h3>
+                <img src="img/chapada-diamantina, Bahia.jpeg" alt="Destino 4" class="destino-imagem" onclick="openModal(this)">
+                <p>A Chapada Diamantina, na Bahia, é um destino de beleza natural excepcional, com montanhas, vales, cachoeiras e grutas impressionantes. Além da paisagem deslumbrante, a região possui uma rica história ligada à mineração de diamantes e cultura local, representada em cidades como Lençóis e Mucugê. Ideal para ecoturismo e aventura, oferece trilhas diversas, como o Morro do Pai Inácio e o Vale do Pati, proporcionando uma experiência enriquecedora em contato com a natureza e a cultura brasileira.</p>
+            </div>
+            <div class="destino-card">
+                <h3>Fernando De Noronha - Pernambuco</h3>
+                <img src="img/fernando de noronha, Pernanbuco.jpeg" alt="Destino 5" class="destino-imagem" onclick="openModal(this)">
+                <p>Fernando de Noronha, em Pernambuco, é um arquipélago paradisíaco protegido como Parque Nacional Marinho. Conhecido por suas praias de águas cristalinas, como Baía do Sancho, e vida marinha diversificada, oferece oportunidades excepcionais para snorkelling e mergulho. Além das paisagens deslumbrantes, possui trilhas até mirantes como o Morro do Pico, proporcionando vistas panorâmicas únicas. Com um forte compromisso com a preservação ambiental, é um destino de natureza intocada e beleza incomparável no Brasil.</p>
+            </div>
+            <div class="destino-card">
+                <h3>João Pessoa - Paraíba</h3>
+                <img src="img/joão pessoa, paraíba.jpeg" alt="Destino 6" class="destino-imagem" onclick="openModal(this)">
+                <p>João Pessoa, capital da Paraíba, é conhecida por suas praias paradisíacas, como Tambaba, e seu centro histórico com construções coloniais e igrejas centenárias. O pôr do sol na Praia do Jacaré é uma experiência única ao som do bolero de Ravel. A cidade também oferece uma rica gastronomia e eventos culturais que celebram a música e tradições locais, tornando João Pessoa um destino encantador para quem busca história, cultura e belezas naturais no nordeste do Brasil.</p>
+            </div>
+            <div class="destino-card">
+                <h3>Lençóis Maranhenses</h3>
+                <img src="img/lencois-maranhenses.jpeg" alt="Destino 7" class="destino-imagem" onclick="openModal(this)">
+                <p>Os Lençóis Maranhenses, no Maranhão, são conhecidos por suas dunas de areia branca e lagoas cristalinas em tons de azul e verde. Durante a temporada de chuvas, entre junho e setembro, as lagoas se formam, oferecendo cenários impressionantes para nadar e relaxar. O parque nacional também abriga uma biodiversidade única adaptada ao ambiente de dunas e lagoas. É um destino ideal para quem busca aventura e contemplação da natureza em sua forma mais pura e bela.</p>
+            </div>
+            <div class="destino-card">
+                <h3>Pantanal - Mato Grosso do Sul</h3>
+                <img src="img/pantanal, mato grosso do sul.jpg" alt="Destino 8" class="destino-imagem" onclick="openModal(this)">
+                <p>O Pantanal, situado em Mato Grosso do Sul, é a maior planície alagável do mundo, conhecida por sua rica biodiversidade. Abriga uma variedade impressionante de vida selvagem, incluindo jacarés, capivaras e onças-pintadas. Durante a estação seca, de abril a setembro, é ideal para safáris aquáticos e terrestres, oferecendo oportunidades únicas de observação de animais. Além disso, o Pantanal preserva a cultura local e oferece uma hospitalidade autêntica, tornando-se um destino imperdível para quem aprecia natureza e aventura.</p>
+            </div>
+            <div class="destino-card">
+                <h3>Pirenópolis - Goiás</h3>
+                <img src="img/pirenópolis, goiás.jpg" alt="Destino 9" class="destino-imagem" onclick="openModal(this)">
+                <p>Pirenópolis, em Goiás, é uma cidade histórica famosa por suas ruas de paralelepípedo, casarões coloniais e igrejas antigas. Localizada próxima à Serra dos Pirineus, oferece cachoeiras como a do Abade e das Araras, perfeitas para trilhas e banhos refrescantes. O centro preserva a arquitetura colonial e é repleto de lojas de artesanato e restaurantes que destacam a culinária regional. É também conhecida por suas festas tradicionais, como a Festa do Divino Espírito Santo, que celebram as tradições locais. Pirenópolis é ideal para quem busca história, cultura e natureza em um ambiente tranquilo e encantador.</p>
+            </div>
+            <div class="destino-card">
+                <h3>Porto de Galinhas - Pernambuco</h3>
+                <img src="img/porto-galinhas, pernanbuco.jpeg" alt="Destino 10" class="destino-imagem" onclick="openModal(this)">
+                <p>Porto de Galinhas, em Pernambuco, é famoso por suas águas claras, piscinas naturais e areias brancas. Ideal para mergulho durante a maré baixa, revela uma rica vida marinha. A vila possui uma animada infraestrutura turística com hotéis, restaurantes e lojas de artesanato. As praias ao redor, como Muro Alto e Maracaípe, completam o cenário paradisíaco, tornando Porto de Galinhas um destino perfeito para quem busca sol, mar e diversão no Nordeste brasileiro.</p>
+            </div>
         </div>
     </section>
     <section id="atividades">
+    <div class="texto-atividades">
         <h2>Atividades para se fazer na natureza</h2>
-        <div class="atividade-card">
-            <img src="" alt="Atividade 1" class="atividade-imagem">
-            <h3>Atividade 1</h3>
-            <p>Descrição breve da atividade 1.</p>
-        </div>
-        <div class="atividade-card">
-            <img src="" alt="Atividade 2" class="atividade-imagem">
-            <h3>Atividade 2</h3>
-            <p>Descrição breve da atividade 2.</p>
-        </div>
-        <div class="atividade-card">
-            <img src="" alt="Atividade 3" class="atividade-imagem">
-            <h3>Atividade 3</h3>
-            <p>Descrição breve da atividade 3.</p>
-        </div>
-        <div class="atividade-card">
-            <img src="" alt="Atividade 4" class="atividade-imagem">
-            <h3>Atividade 4</h3>
-            <p>Descrição breve da atividade 4.</p>
-        </div>
-        <div class="atividade-card">
-            <img src="" alt="Atividade 5" class="atividade-imagem">
-            <h3>Atividade 5</h3>
-            <p>Descrição breve da atividade 5.</p>
-        </div>
-        <div class="atividade-card">
-            <img src="" alt="Atividade 6" class="atividade-imagem">
-            <h3>Atividade 6</h3>
-            <p>Descrição breve da atividade 6.</p>
-        </div>
-        <div class="atividade-card">
-            <img src="" alt="Atividade 7" class="atividade-imagem">
-            <h3>Atividade 7</h3>
-            <p>Descrição breve da atividade 7.</p>
-        </div>
-        <div class="atividade-card">
-            <img src="" alt="Atividade 8" class="atividade-imagem">
-            <h3>Atividade 8</h3>
-            <p>Descrição breve da atividade 8.</p>
-        </div>
-        <div class="atividade-card">
-            <img src="" alt="Atividade 9" class="atividade-imagem">
-            <h3>Atividade 9</h3>
-            <p>Descrição breve da atividade 9.</p>
-        </div>
-        <div class="atividade-card">
-            <img src="" alt="Atividade 10" class="atividade-imagem">
-            <h3>Atividade 10</h3>
-            <p>Descrição breve da atividade 10.</p>
+    </div>
+        <div class="atividades-container">
+            <div class="atividade-card">
+                <img src="/atividades/mergulho.jpg" alt="Atividade 1" class="atividade-imagem" onclick="openModal(this)">
+                <h3>Mergulho</h3>
+                <p>O mergulho é uma jornada fascinante rumo ao desconhecido das profundezas aquáticas. Entre corais vibrantes e cardumes coloridos, cada mergulho é uma descoberta única de criaturas majestosas como tartarugas deslizando graciosamente e peixes exóticos deslumbrando com suas cores iridescentes.  </p>
+            </div>
+            <div class="atividade-card">
+                <img src="/atividades/caiaque .webp" alt="Atividade 2" class="atividade-imagem" onclick="openModal(this)">
+                <h3>Caiaque</h3>
+                <p>O caiaque é uma experiência de imersão na serenidade dos cursos d'água. Sentado confortavelmente em seu casco estreito, o remador desliza suavemente pela superfície, explorando cenários que só podem ser acessados por via aquática com uma sensação de paz que é intensificada pelo ritmo calmo do remo, que ecoa suavemente na água .</p>
+            </div>
+            <div class="atividade-card">
+                <img src="/atividades/escaladas .jpg" alt="Atividade 3" class="atividade-imagem" onclick="openModal(this)">
+                <h3>Escalada</h3>
+                <p>A escalada é uma experiência desafiadora que une coragem, técnica e conexão com a natureza vertical. À medida que avança, descobre novos ângulos de visão e perspectivas panorâmicas que só a altura proporciona. </p>
+            </div>
+            <div class="atividade-card">
+                <img src="/atividades/tirolesa .jpg" alt="Atividade 4" class="atividade-imagem" onclick="openModal(this)">
+                <h3>Tirolesa</h3>
+                <p>A tiroleza é uma emocionante aventura que combina adrenalina e paisagens deslumbrantes em um só movimento. Suspensos por um cabo de aço, os participantes lançam-se de plataformas elevadas em uma descida veloz sobre vales, rios ou florestas. O vento sopra no rosto enquanto se desliza suavemente, proporcionando uma vista panorâmica incomparável da natureza ao redor. </p>
+            </div>
+            <div class="atividade-card">
+                <img src="/atividades/peddleboard .webp" alt="Atividade 5" class="atividade-imagem" onclick="openModal(this)">
+                <h3>Peddleboard</h3>
+                <p>O stand up paddleboarding, ou peddleboard, é uma experiência de equilíbrio e serenidade sobre as águas tranquilas de lagos, rios ou oceanos. Em pé sobre uma prancha larga e estável, o praticante desliza suavemente pela superfície da água, utilizando um remo para impulsionar-se. A visão é panorâmica, permitindo ao remador explorar paisagens que podem variar desde litorais pitorescos até enseadas isoladas.  O SUP combina exercício físico suave com momentos de contemplação silenciosa, enquanto a mente se acalma ao ritmo do remo.</p>
+            </div>
+            <div class="atividade-card">
+                <img src="/atividades/surfe .jpg" alt="Atividade 6" class="atividade-imagem" onclick="openModal(this)">
+                <h3>Surfe</h3>
+                <p>O surf é uma celebração da harmonia entre o ser humano e as poderosas ondas do mar. Com uma prancha como companheira, o surfista desafia o oceano, lançando-se sobre as cristas das ondas em um ballet fluido de movimentos graciosos.  O mar proporciona um cenário dinâmico e imprevisível, onde cada onda é única, oferecendo uma experiência renovada a cada surfe.</p>
+            </div>
+            <div class="atividade-card">
+                <img src="/atividades/trilhas e caminhadas .webp" alt="Atividade 7" class="atividade-imagem" onclick="openModal(this)">
+                <h3>Trilhas</h3>
+                <p> A trilha é uma jornada através dos caminhos menos percorridos da natureza, uma experiência que combina exploração, contemplação e conexão com o ambiente natural. A pé, os trilheiros adentram florestas densas, atravessam vales serenos e ascendem montanhas majestosas, guiados pelo fascínio de descobrir paisagens intocadas e vida selvagem em seu habitat natural. Cada passo é um convite para a curiosidade e a aventura, enquanto o solo sob os pés revela segredos que só os trilheiros persistentes têm o privilégio de testemunhar.</p>
+            </div>
+            <div class="atividade-card">
+                <img src="/atividades/kitesurf .jpg" alt="Atividade 8" class="atividade-imagem" onclick="openModal(this)">
+                <h3>Kitesurf</h3>
+                <p>O kitesurf é uma emocionante fusão entre o domínio do vento e a habilidade do surfista sobre as ondas. Equipado com uma prancha e um enorme kite (pipa) que captura a força dos ventos, o praticante é impulsionado pela água, deslizando habilmente sobre as ondas do mar ou de lagos. O controle do kite exige precisão e destreza, enquanto o surfista manobra através de giros e saltos impressionantes, impulsionados pela energia natural do vento.</p>
+            </div>
+            <div class="atividade-card">
+                <img src="/atividades/snorkeling .webp" alt="Atividade 9" class="atividade-imagem" onclick="openModal(this)">
+                <h3>Snorkeling</h3>
+                <p>O snorkelling é uma atividade fascinante que permite explorar o mundo subaquático com uma simplicidade encantadora. Equipado com máscara, snorkel e nadadeiras, você flutua na superfície da água cristalina, observando corais vibrantes, peixes coloridos e vida marinha diversificada.</p>
+            </div>
+            <div class="atividade-card">
+                <img src="/atividades/acampamento .webp" alt="Atividade 10" class="atividade-imagem" onclick="openModal(this)">
+                <h3>Acampamento</h3>
+                <p>O acampamento é uma experiência imersiva na natureza, onde a simplicidade se encontra com a aventura. Sob um céu estrelado e envolto pelo ar puro das florestas, participantes se reconectam com o ambiente natural, longe das distrações da vida cotidiana.</p>
+            </div>
         </div>
     </section>
     <section id="dicas">
         <h2>Dicas para sua Viagem</h2>
         <ul>
-            <li>Dica 1</li>
-            <li>Dica 2</li>
-            <li>Dica 3</li>
-            <li>Dica 4</li>
-            <li>Dica 5</li>
+            <li><strong>Verifique Documentos Necessários:</strong> Embora não precise de passaporte, é importante ter um documento de identidade válido (como RG) e verificar se há algum requisito específico para a sua viagem.</li>
+            <li><strong>Conheça as Regras de Transporte:</strong> Verifique as regras de transporte para bagagens em ônibus ou aviões e esteja atento a possíveis taxas adicionais.</li>
+            <li><strong>Explore as Cidades Locais:</strong> Pesquise sobre atrações e pontos turísticos da sua própria região ou estados vizinhos que você pode explorar.</li>
+            <li><strong>Acomodações e Refeições:</strong> Considere ficar em pousadas, hostels ou Airbnb para uma experiência mais local e econômica. Experimente a culinária regional para uma imersão cultural.</li>
+            <li><strong>Seguro de Viagem Nacional:</strong> Embora menos comum, um seguro de viagem pode ser útil para cobrir imprevistos como perda de bagagem ou problemas de saúde.</li>
+            <li><strong>Clima e Roupas:</strong> Verifique a previsão do tempo do destino e faça as malas de acordo com o clima. O clima pode variar bastante dentro do país.</li>
+            <li><strong>Transporte Local:</strong> Informe-se sobre o transporte local, como ônibus, metrô ou aplicativos de mobilidade. Em alguns lugares, alugar um carro pode ser uma boa opção.</li>
+            <li><strong>Comunique-se com Locais:</strong> Conheça as particularidades e costumes das regiões que você vai visitar para respeitar e adaptar-se à cultura local.</li>
+            <li><strong>Planeje Roteiros Alternativos:</strong> Tenha planos de contingência caso algo não saia como esperado. Alternativas e opções de atividades podem evitar frustrações.</li>
+            <li><strong>Aproveite as Ofertas Locais:</strong> Fique atento a promoções e ofertas de eventos, shows e atrações locais que podem enriquecer sua viagem.</li>
         </ul>
     </section>
     <section id="contato">
@@ -177,7 +184,9 @@
             <input type="Whatsapp" id="Whatsapp" name="Whatsapp">
             <label for="mensagem">Mensagem:</label>
             <textarea id="mensagem" name="mensagem"></textarea>
-            <button type="submit">Enviar</button>
+           <div class="button-container">
+            <button type="submit" class="submit-btn">Enviar</button>
+        </div>
         </form>
     </section>
     <footer id="footer">
@@ -188,19 +197,17 @@
             </div>
             <div class="footer-section contact">
                 <h2>Contato</h2>
-                <p>Aluna: Érica Sousa dos Santos  </p>
+                <p>Aluna: Érica Sousa dos Santos</p>
                 <p>Email: santos.erica11@escola.pr.gov.br</p>
                 <p>Telefone: (45) 9125-5184</p>
                 <p>Endereço: Rua das Canelas, 295, Marechal Cândido Rondon, PR</p>
             </div>
             <div class="footer-section social">
-                <h2>Siga nosso colégio !</h2>
+                <h2>Siga nosso colégio!</h2>
                 <div class="social-links">
                     <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
-                    <a href="https://www.instagram.com/monteirolobato295/"><i class="fab fa-instagram"></i>
-                        Instagram</a>
-                    <a href="https://sites.google.com/escola.pr.gov.br/monteirolobatomcr/p%C3%A1gina-inicial"><i
-                            class="fas fa-globe"></i> Site do Colégio</a>
+                    <a href="https://www.instagram.com/monteirolobato295/"><i class="fab fa-instagram"></i> Instagram</a>
+                    <a href="https://sites.google.com/escola.pr.gov.br/monteirolobatomcr/p%C3%A1gina-inicial"><i class="fas fa-globe"></i> Site do Colégio</a>
                 </div>
             </div>
         </div>
@@ -208,6 +215,14 @@
             &copy; Concurso Agrinho 2024 | Colégio Estadual Monteiro Lobato
         </div>
     </footer>
+
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="Imagem do Modal">
+        </div>
+    </div>
+
     <script src="main.js"></script>
 </body>
 
